@@ -1,0 +1,233 @@
+body {
+  background: white;
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+}
+html {
+  min-height: 100%;
+  width: 100%;
+}
+.hidden {
+  display: none;
+}
+.privacy,
+.test {
+  padding: 80px 30px 20px;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+}
+.privacy .teddyContainer,
+.test .teddyContainer {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 200px;
+  overflow: hidden;
+  margin: 30px auto 20px;
+}
+.privacy .teddy,
+.test .teddy {
+  width: 100%;
+  height: 100%;
+}
+.privacy h1,
+.test h1 {
+  color: black;
+  font-weight: 300;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 30px;
+}
+.privacy .subtitle,
+.test .subtitle {
+  font-weight: 300;
+  font-size: 26px;
+  margin-top: 5px;
+  font-family: 'Quicksand', sans-serif;
+}
+.privacy .logo,
+.test .logo {
+  margin: 0px auto 00px;
+  display: block;
+  width: 150px;
+}
+.privacy .logo img,
+.test .logo img {
+  width: 100%;
+}
+.privacy .section,
+.test .section {
+  margin: 0 auto 50px;
+  max-width: 800px;
+  font-size: 16px;
+  font-weight: 300;
+}
+.privacy h2,
+.test h2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  font-family: 'Roboto', serif;
+}
+.privacy li,
+.test li {
+  margin-bottom: 10px;
+  line-height: 1.4em;
+}
+.privacy footer,
+.test footer {
+  padding: 100px 0 0px;
+  margin: 0 auto;
+  max-width: 800px;
+  line-height: 1.3em;
+  font-size: 12px;
+}
+.privacy footer div,
+.test footer div {
+  padding-bottom: 5px;
+}
+.test p {
+  margin-bottom: 35px;
+}
+.test h1 {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.test .section {
+  text-align: center;
+}
+.test button,
+.test a {
+  padding: 10px 20px;
+  background-color: #19e0c3;
+  border-radius: 50000px;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 15px;
+  width: 520px;
+}
+.test .custominputparent {
+  margin-bottom: 20px;
+  width: 560px;
+  display: inline-block;
+  position: relative;
+}
+.test button.custominputsubmit {
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 50px;
+  width: 120px;
+  padding: 0 20px;
+  line-height: 50px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  box-sizing: border-box;
+}
+.test button.custominputsubmit:disabled {
+  cursor: default;
+  background-color: #ccc;
+}
+.test .custominput {
+  padding: 10px 140px 10px 30px;
+  height: 50px;
+  border-radius: 50000px;
+  display: inline-block;
+  border: 2px solid #aaa;
+  width: 100%;
+}
+.test .custominput:focus {
+  outline: none !important;
+  border: 2px solid #19e0c3;
+}
+@media only screen and (max-width: 700px) {
+  .privacy,
+  .test {
+    padding-top: 40px;
+  }
+  .privacy .teddyContainer,
+  .test .teddyContainer {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto 20px;
+  }
+  .privacy h1,
+  .test h1 {
+    font-size: 26px;
+    margin-bottom: 40px;
+    margin-top: 15px;
+  }
+  .privacy h2,
+  .test h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  .privacy .section,
+  .test .section {
+    font-size: 15px;
+  }
+  .privacy footer,
+  .test footer {
+    font-size: 10px;
+  }
+  .privacy footer div,
+  .test footer div {
+    padding-bottom: 0;
+  }
+  .test h1 {
+    margin-bottom: 20px;
+  }
+  .test p {
+    margin-bottom: 40px;
+  }
+  .test .custominputparent,
+  .test a {
+    display: block;
+    width: auto;
+    margin-bottom: 20px;
+  }
+}
+.index h1 {
+  margin-bottom: 30px;
+}
+.index .section {
+  max-width: 700px;
+  font-size: 18px;
+}
+.index .section li {
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.6em;
+}
+.index .download-links {
+  display: block;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  text-align: center;
+}
+.index .download-links a {
+  height: 75px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.index .download-links img {
+  height: 75px;
+}
+@media only screen and (max-width: 660px) {
+  .index .download-links a {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 300px;
+    height: auto;
+    display: inline-block;
+  }
+}
+/*# sourceMappingURL=style.css.map */

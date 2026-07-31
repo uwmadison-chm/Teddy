@@ -1,0 +1,10 @@
+
+Django==5.2.7
+Fabric==1.15.0
+MarkupSafe==2.1.5
+PyMySQL==1.0.2
+python-dateutil==2.8.2
+pytz==2021.1
+django-widget-tweaks==1.4.8
+django-extensions==4.1
+Werkzeug==3.1.8

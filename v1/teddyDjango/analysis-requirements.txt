@@ -1,0 +1,17 @@
+tensorflow-aarch64
+tensorflow-macos
+progress
+tabulate
+pymediainfo
+opencv-python
+SpeechRecognition
+pandas
+tqdm
+Pillow
+Flask
+fire
+gdown
+gunicorn
+mtcnn
+jinja2
+

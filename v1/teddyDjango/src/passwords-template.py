@@ -1,0 +1,8 @@
+DJANGO_SECRET_KEY = ''
+
+HOSTNAME = ''
+
+MYSQL_PASSWORD = ''
+MYSQL_USER = ''
+MYSQL_DB = ''
+

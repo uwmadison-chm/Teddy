@@ -1,0 +1,54 @@
+<html>
+<head>
+    <title>Teddy - A Research Platform</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600|Roboto:300,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/reset.css">
+    <link rel="stylesheet" href="/static/style.css{%  cachebreak  %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="index privacy">
+
+    <header>
+        <div class="teddyContainer">
+            <canvas id="teddycanvas" class="teddy" width="300" height="300"></canvas>
+        </div>
+        <h1>Teddy</h1>
+    </header>
+    <div class="section">
+        <h2></h2>
+        <ul>
+            <li>Teddy is a video recording research platform created by the Affective Computing Group at the MIT Media Lab, in conjunction with Center for Healthy Minds at the University of Wisconsin-Madison.</li>
+            <l1 class="download-links">
+                <a href="FIXME"><img src="/static/image/google-play-badge.png"></a>
+                <a href="FIXME"><img src="/static/image/iosbadge.svg"></a>
+            </l1>
+            <li>If you are enrolled in a study that requires the use of Teddy, please download it from the links above. Please contact your study coordinator for your login info.</li>
+            <li>If you have any other questions or concerns, please feel free to <a href="/privacy/">read our privacy statement</a> or <a href="mailto:affective-apps@media.mit.edu">Contact us directly</a>.</li>
+        </ul>
+    </div>
+    <footer>
+        <div>&copy; 2022 MIT Media Lab.</div>
+        <div>
+        Teddy character is used under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons</a> from <a href="https://rive.app/community/520-990-teddy-login-screen/" target="_blank">JcToon at Rive</a>.
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/rive-js"></script>
+<script>
+    const r = new rive.Rive({
+        src: '/static/teddy.riv',
+        canvas: document.getElementById('teddycanvas'),
+        autoplay: true,
+        stateMachines: 'teddy',
+        onLoad: (_) => {
+            const inputs = r.stateMachineInputs('teddy');
+            const waveTrigger = inputs.find(i => i.name === 'wave');
+            setTimeout(() => {
+                waveTrigger.fire();
+            }, 300);
+        },
+    });
+</script>
+
+</body>
+</html>

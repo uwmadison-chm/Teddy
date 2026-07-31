@@ -1,0 +1,76 @@
+<html>
+<head>
+    <title>Teddy Privacy Policy</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600|Roboto:300,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/reset.css">
+    <link rel="stylesheet" href="/static/style.css{%  cachebreak  %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="privacy">
+
+    <header>
+        <div class="teddyContainer">
+            <canvas id="teddycanvas" class="teddy" width="300" height="300"></canvas>
+        </div>
+        <h1>Teddy Privacy Policy</h1>
+    </header>
+    <div class="section">
+        <h2>Teddy is a video recording research platform</h2>
+        <ul>
+            <li>The Teddy app requires you to record your face while watching videos and talking. Whenever the app is recording, it displays a warning near the camera preview so you always know when you're being recorded. Likewise, the app will never begin recording without your express consent.</li>
+            <li>Your recordings are encrypted on your phone before being sent to our servers using public-private keypair encryption. Your unencrypted raw recordings are never stored on our server or transferred over the internet. We use state of the art encryption methods in which the recording files are encrypted using a randomly generated AES-256 key, which is then encrypted with an RSA-2048 public key before being sent to our server. The only way to decrypt your files is to have our private RSA key that we keep locked up tight.</li>
+            <li>(Fun fact: The NSA <a href="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard#Security">has declared</a> these encryption algorithms fit for storing Top Secret classified data!)</li>
+        </ul>
+    </div>
+    <div class="section">
+        <h2>Teddy collects other app usage data but keeps you anonymous!</h2>
+        <ul>
+            <li>In order to help our research project, the app tracks some basic app usage information including the times you start and stop your recording sessions or answers you choose when given prompts by Teddy. We do not collect any information about you or your device!</li>
+            <li>Your recording files and app usage data are connected only to a unique study ID that is assigned to you when you start the study. It is an anonymous identifier we use to group together all your recordings, but it can in no way be used to link back to you, your email, or your name. The app and backend have no idea who you are and no way to find out!</li>
+        </ul>
+    </div>
+    <div class="section">
+        <h2>Teddy is built using Google ML Kit.</h2>
+        <ul>
+        <li>We use Google ML Kit to help you ensure that you are well lit and present in your recordings before we begin. Google ML kit does all processing on-device and never sends your images or videos to Google servers. However, they do collect anonymous device and usage data. Please see <a href="https://developers.google.com/ml-kit/terms">their terms</a> for more information.</li>
+        </ul>
+    </div>
+    <div class="section">
+        <h2 id="delete">Data Deletion</h2>
+        <ul>
+        <li>In order to use Teddy, you are required to be within an academic study. If you wish to have your Teddy data deleted, please contact your study coordinator. They will work with you to make sure you leave the study correctly or maintain the correct data required to remain in the study. Rest assured, they will pass on any request for data deletion to us, and we will delete your data as requested. In order to maintain study participant anonymity, we ask that you please do not contact us directly and work only through your study coordinator.</li>
+        </ul>
+    </div>
+    <div class="section">
+        <h2>Your privacy is important to us!</h2>
+        <ul>
+            <li>If you have any concerns at all, please <a href="mailto:teddy-app@media.mit.edu">Contact Us</a>.</li>
+        </ul>
+    </div>
+
+    <footer>
+        <div>&copy; 2022 MIT Media Lab.</div>
+        <div>
+        Teddy character is used under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons</a> from <a href="https://rive.app/community/520-990-teddy-login-screen/" target="_blank">JcToon at Rive</a>.
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/rive-js"></script>
+<script>
+    const r = new rive.Rive({
+        src: '/static/teddy.riv',
+        canvas: document.getElementById('teddycanvas'),
+        autoplay: true,
+        stateMachines: 'teddy',
+        onLoad: (_) => {
+            const inputs = r.stateMachineInputs('teddy');
+            const waveTrigger = inputs.find(i => i.name === 'wave');
+            setTimeout(() => {
+                waveTrigger.fire();
+            }, 300);
+        },
+    });
+</script>
+
+</body>
+</html>

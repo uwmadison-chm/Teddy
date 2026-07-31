@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="GJd-Yh-RWb">
+                                <rect key="frame" x="167.66666666666663" y="415" width="92.999999999999972" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="Jqd-e2-EXn"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Teddy">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="36" name="HelveticaNeue-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="University of Wisconsin-Madison" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="reX-m1-maF">
+                                <rect key="frame" x="0.0" y="833" width="428" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MIT Media Lab" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="MN2-I3-ftu">
+                                <rect key="frame" x="0.0" y="804" width="428" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Pkb-5o-YwI">
+                                <rect key="frame" x="0.0" y="772" width="428" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="PfL-66-i8W"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="A Research Project By">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="teddyicon_round.png" translatesAutoresizingMaskIntoConstraints="NO" id="5DN-Zy-D8A">
+                                <rect key="frame" x="-412.66666666666669" y="254" width="1253.3333333333333" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="BsR-d2-iG6"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GJd-Yh-RWb" firstAttribute="top" secondItem="5DN-Zy-D8A" secondAttribute="bottom" constant="33" id="4mH-dq-Fue"/>
+                            <constraint firstItem="MN2-I3-ftu" firstAttribute="trailing" secondItem="reX-m1-maF" secondAttribute="trailing" id="B1z-dh-pki"/>
+                            <constraint firstItem="Pkb-5o-YwI" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" id="Ium-Rv-sjK"/>
+                            <constraint firstItem="5DN-Zy-D8A" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="YH6-bN-IcE"/>
+                            <constraint firstItem="GJd-Yh-RWb" firstAttribute="centerX" secondItem="5DN-Zy-D8A" secondAttribute="centerX" id="an6-RJ-Rqu"/>
+                            <constraint firstItem="reX-m1-maF" firstAttribute="centerX" secondItem="GJd-Yh-RWb" secondAttribute="centerX" id="cxX-is-B85"/>
+                            <constraint firstItem="5DN-Zy-D8A" firstAttribute="centerY" secondItem="Bcu-3y-fUS" secondAttribute="centerY" constant="-150" id="diJ-kH-GUr"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="reX-m1-maF" secondAttribute="bottom" constant="38" id="fzt-nc-5NT"/>
+                            <constraint firstItem="reX-m1-maF" firstAttribute="top" secondItem="MN2-I3-ftu" secondAttribute="bottom" constant="8" id="hS7-vf-GJC"/>
+                            <constraint firstItem="Pkb-5o-YwI" firstAttribute="leading" secondItem="MN2-I3-ftu" secondAttribute="leading" id="ikw-VS-hx3"/>
+                            <constraint firstItem="MN2-I3-ftu" firstAttribute="leading" secondItem="reX-m1-maF" secondAttribute="leading" id="kdK-pR-Q1b"/>
+                            <constraint firstItem="MN2-I3-ftu" firstAttribute="top" secondItem="Pkb-5o-YwI" secondAttribute="bottom" constant="11" id="zEl-py-32k"/>
+                            <constraint firstItem="Pkb-5o-YwI" firstAttribute="trailing" secondItem="MN2-I3-ftu" secondAttribute="trailing" id="zJP-TV-TBQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="373.76311844077964"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="teddyicon_round.png" width="1253" height="1253"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
