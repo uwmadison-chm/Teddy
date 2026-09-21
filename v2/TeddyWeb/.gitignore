@@ -10,7 +10,7 @@ encryptionkeys/*
 certs_and_stuff/
 *.eps
 *.pkl
-data/
+/data/
 certs/
 
 mysql2sqlite
